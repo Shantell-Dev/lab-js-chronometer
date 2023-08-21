@@ -67,7 +67,29 @@ To check how the final version of the chronometer should work, check this **[dem
 
 <br>
 
-### Iteration 0: Getting Started
+### 
+
+The `src/index.js` file depends on the methods of the `Chronometer` to display the time on the *stopwatch* and includes a `Chronometer` instance as follows:
+
+> ```js
+> // src/index.js
+> const chronometer = new Chronometer(); // instance of the Chronometer
+> 
+> // ...
+> ```
+
+The methods of the `Chronometer` are not yet functional. Your task will be to implement them in the following iterations.
+
+<br>
+
+### Iteration 1: The `Chronometer` class
+
+Let's implement the `Chronometer` class following the below requirements:
+- The class (`constructor`) should not take any arguments.
+- The class (`constructor`) should initialize two properties for each new chronometer object:
+  -  `currentTime`, with the initial value set to `0`.
+  -  `intervalId`, with the initial value set to `null`.
+Iteration 0: Getting Started
 
 #### The Stopwatch UI
 
@@ -94,28 +116,6 @@ The *stopwatch* markup, styles, and DOM functionality are in the files `styles/s
 **You will do all your work in the `src/chronometer.js` file.**
 
 The goal of the exercise is to finish implementing the `Chronometer` class and its methods. The class and the methods are already defined in the `chronometer.js` file but have no functionality.
-
-The `src/index.js` file depends on the methods of the `Chronometer` to display the time on the *stopwatch* and includes a `Chronometer` instance as follows:
-
-> ```js
-> // src/index.js
-> const chronometer = new Chronometer(); // instance of the Chronometer
-> 
-> // ...
-> ```
-
-The methods of the `Chronometer` are not yet functional. Your task will be to implement them in the following iterations.
-
-<br>
-
-### Iteration 1: The `Chronometer` class
-
-Let's implement the `Chronometer` class following the below requirements:
-- The class (`constructor`) should not take any arguments.
-- The class (`constructor`) should initialize two properties for each new chronometer object:
-  -  `currentTime`, with the initial value set to `0`.
-  -  `intervalId`, with the initial value set to `null`.
-
 
 Once done, check the test results and verify that your code is passing the checks.
 
